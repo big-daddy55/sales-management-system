@@ -51,7 +51,9 @@ class OrderController extends Controller
         $order->delete($id);
 
         return response([
-            'message' => 'Order deleted'
+            'message' => 'Order deleted',
+            'data' => "Sample Data"
         ]);
+
     }
 }
